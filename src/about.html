@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="utf-8">
+    <title>About - Appy Demo</title>
+    <script>
+    if (localStorage.getItem('dark-mode') == 'true' || !('dark-mode' in localStorage)) {
+        document.querySelector('html').classList.add('dark');
+    } else {
+        document.querySelector('html').classList.remove('dark');
+    }        
+    </script>
+</head>
+
+<body class="font-inter antialiased bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 tracking-tight">
+
+    <!-- Page wrapper -->
+    <div class="flex flex-col min-h-screen overflow-hidden">
+
+        <!-- Site header -->
+        <%= require('html-loader!./partials/header.html') %>
+
+        <!-- Page content -->
+        <main class="flex-grow">
+
+            <!-- Page sections -->
+            <%= require('html-loader!./partials/hero-about.html') %>
+            <%= require('html-loader!./partials/features-gallery.html') %>
+            <%= require('html-loader!./partials/timeline.html') %>
+            <%= require('html-loader!./partials/career.html') %>
+            <%= require('html-loader!./partials/features-animation.html') %>
+            <%= require('html-loader!./partials/team.html') %>
+            <%= require('html-loader!./partials/cta-contact.html') %>
+
+        </main>
+
+        <!-- Site footer -->
+        <%= require('html-loader!./partials/footer.html') %>
+
+    </div>
+
+</body>
+
+</html>

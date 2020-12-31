@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Appy HTML Demo - Home</title>
+    <script>
+    if (localStorage.getItem('dark-mode') == 'true' || !('dark-mode' in localStorage)) {
+        document.querySelector('html').classList.add('dark');
+    } else {
+        document.querySelector('html').classList.remove('dark');
+    }        
+    </script>
+</head>
+
+<body class="font-inter antialiased bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100 tracking-tight">
+
+    <!-- Page wrapper -->
+    <div class="flex flex-col min-h-screen overflow-hidden">
+
+        <!-- Site header -->
+        <%= require('html-loader!./partials/header.html') %>
+
+        <!-- Page content -->
+        <main class="flex-grow">
+
+            <!-- Page illustration -->
+            <div class="relative max-w-6xl mx-auto h-0 pointer-events-none -z-1" aria-hidden="true">
+                <%= require('html-loader!./partials/page-illustration.html') %>
+            </div>
+            
+            <!-- Page sections -->
+            <%= require('html-loader!./partials/hero-home.html') %>
+            <%= require('html-loader!./partials/stats.html') %>
+            <%= require('html-loader!./partials/carousel.html') %>
+            <%= require('html-loader!./partials/tabs.html') %>
+            <%= require('html-loader!./partials/process.html') %>
+            <%= require('html-loader!./partials/pricing-tables.html') %>
+            <%= require('html-loader!./partials/testimonials-blocks.html') %>
+            <%= require('html-loader!./partials/features-blocks.html') %>
+            <%= require('html-loader!./partials/cta.html') %>
+            
+        </main>
+
+        <!-- Site footer -->
+        <%= require('html-loader!./partials/footer.html') %>
+
+    </div>
+
+</body>
+
+</html>
