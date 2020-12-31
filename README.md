@@ -1,5 +1,7 @@
 # Appy HTML
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/ae0ab066-dd43-46ba-b5fe-53ee3ea86a1d/deploy-status)](https://app.netlify.com/sites/twx-appy/deploys)
+
 HTML landing page template designed by Cruip.
 
 This HTML template is shipped with Webpack as build tool, and it's based on a custom version of (Eric Alli's Static Site Boilerplate)[https://staticsiteboilerplate.com/].
